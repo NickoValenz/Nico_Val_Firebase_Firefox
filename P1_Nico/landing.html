@@ -6,23 +6,14 @@
     <title>Pagina Inicio</title>
 </head>
 <link rel="stylesheet" href="estilo_1.css">
+<script type="module" src="script.js"></script>
+<script type="module" src="promesas.js"></script>
+
 <body>
     <h1 id="Titulo">Por que usar Firefox</h1>
-    <li-1>
-        Mision
-    </li-1>
-    <li-2>
-        Vision
-    </li-2>
-    <li-3>
-        Quienes Somos
-    </li-3>
-    <link href="quienes"
-    <li-4>
-        Redes sociales
-    </li-4>
-    <link href="Info_redes"
-    <div>
+    <button id="btnColor">Modo Claro/Oscuro</button>
+    <button id="btnPorte">Tamaño de letra</button>
+
         <p
             id="Parrafo_Mision">La mision de firefox es proteger y dar privacidad a sus usuarios a traves de un navegador y plataformas de codigo libre y sin violaciones a la seguridad
             No somos una empresa de tecnología normal. Las cosas que creamos priorizan a las personas y su privacidad por sobre las ganancias. Existimos para hacer de Internet un lugar más saludable y feliz para todos.
@@ -61,23 +52,38 @@ La seguridad y privacidad de los usuarios en Internet es fundamental y no deber�
             </h2>
     </div>
     <div>
-        <form>
-            <form>
-                <fieldset id="forma_formulario">
-                    <p>Contactanos para darte mas informacion en español de por que usar firefox</p>
+        <form id="formulario">
+                <fieldset>
+                    <p>Contactanos y dinos tu opinion para darte mas informacion en español de por que usar firefox</p>
+                    <!-- Poner validaciones a los campos -->
                 
                 <class class="datos">
+                <label for="pais">Pais:</label>
+                <input type="text" id="pais" name="pais">
                 <label for="nombre">Nombre:</label>
                 <input type="text" id="nombre" name="nombre">
                 <label for="apellido">Apellido:</label>
                 <input type="text" id="apellido" name="apellido">
                 <label for="correo">Correo:</label>
                 <input type="email" id="correo" name="correo">
+                <label for="correo_sec">Correo de seguridad:</label>
+                <input type="email" id="correo_sec" name="correo_sec">
                 <label for="telefono">Telefono:</label>
                 <input type="tel" id="telefono" name="telefono">
-                <input type="submit" id="enviar"
+                <p>Seleccione a continuacion su preferencia al look de la pagina en sus modos de contraste:</p>
+                <br><option>Modo Claro</option><input type="checkbox" id="preferencia" name="preferencia">
+                <br><option>Modo Oscuro</option><input type="checkbox" id="preferencia_2" name="preferencia_2">
+                <p>Si selecciona ambos se entendera que se ven bien para ud de ambas maneras</p>
+
+                <br>
+
+                <p>Escoga que tanto le gusto la pagina</p>
+                <select id="selecciones">Me gusto mucho la pagina<option id="opcion_1">Me gusto mucho</option><option id="opcion_2">Ta normalita</option><option id="opcion_3">No me gusto</option></select><br>
+                <br><textarea></textarea><br>
+                <label>Escriba una recomendacion para firefox</label><br>
+                
+                <input type="submit" id="enviar">
             </class>
-              </form>
             </fieldset>
         </form>
     </div>
