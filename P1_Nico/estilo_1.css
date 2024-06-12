@@ -1,5 +1,18 @@
 body {
-    background-color: rgb(255, 255, 255);
+    background-color: white;
+    color: black;
+}
+
+/*modo obscuro */
+body.modo-obscuro{
+    background-color: black;
+    color: white;
+}
+
+/*tamaño de la letra */
+
+body.porte-letra{
+    font-size: 1.4em;
 }
 
 #Titulo {
@@ -55,4 +68,8 @@ option{
     body{
         color: black;
     }
+}
+
+input{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
