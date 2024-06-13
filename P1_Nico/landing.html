@@ -7,11 +7,10 @@
     <link rel="stylesheet" href="estilo_1.css">
     <script type="module" src="script.js"></script>
     <script type="module" src="promesas.js"></script>
-
 </head>
 <body>
-    <h1 id="Titulo">Por qué usar Firefox</h1>
-    <button id="btnColor">Modo Claro/Oscuro</button>
+    <h1 id="Titulo">Por que usar Firefox</h1>
+    <button id="btnColor">Modo Claro/Obscuro</button>
     <button id="btnPorte">Tamaño de letra</button>
 
     <p id="Parrafo_Mision">
@@ -22,10 +21,6 @@
     <p id="Parrafo_Vision">
         La visión de Firefox es incentivar y motivar a los usuarios a ser más conscientes de su privacidad e información ya que en los tiempos actuales estos tienen un alto valor en todo sentido.
     </p>
-
-    <div>
-        <iframe width="420" height="315" src="https://www.youtube.com/watch?v=pU1hR5tUBT0"></iframe>
-    </div>
 
     <div>
         <p id="Parrafo_QuienesSomos">Nos definen los siguientes principios y definiciones:</p>
@@ -48,39 +43,70 @@
     <div>
         <form id="formulario">
             <fieldset>
-                <p>Contáctanos y dinos tu opinión para darte más información en español de por qué usar Firefox.</p>
-                <div class="datos">
-                    <label for="pais">Pais:</label>
-                    <input type="text" id="pais" name="pais">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre">
-                    <label for="apellido">Apellido:</label>
-                    <input type="text" id="apellido" name="apellido">
-                    <label for="correo">Correo:</label>
-                    <input type="email" id="correo" name="correo">
-                    <label for="correo_sec">Correo de seguridad:</label>
-                    <input type="email" id="correo_sec" name="correo_sec">
-                    <label for="telefono">Telefono:</label>
-                    <input type="tel" id="telefono" name="telefono">
-                    <p>Seleccione a continuacion su preferencia al look de la pagina en sus modos de contraste:</p>
-                    <input type="checkbox" id="preferencia" name="preferencia"> Modo Claro
-                    <input type="checkbox" id="preferencia_2" name="preferencia_2"> Modo Oscuro
-                    <p>Si selecciona ambos se entendera que se ven bien para usted de ambas maneras.</p>
-                    <p>Escoge qué tanto le gustó la página:</p>
-                    <br><select id="selecciones">
-                        <option id="opcion_1">Me gusto mucho</option>
-                        <option id="opcion_2">Está normal</option>
-                        <option id="opcion_3">No me gusto</option>
-                    </select><br>
-                    <br><label>Escriba una recomendación para Firefox:</label><br>
-                    <br><textarea id="area_texto"></textarea><br>
-                    <input type="submit" id="enviar">
-                </div>
+                <p>Contactanos y dinos tu opinion para darte mas informacion en español de por que usar Firefox</p>
+                <label for="pais">Pais:</label>
+                <input type="text" id="pais" name="pais"><br><br>
+
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre"><br><br>
+
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido"><br><br>
+
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" name="correo"><br><br>
+
+                <label for="correo_sec">Correo de seguridad:</label>
+                <input type="email" id="correo_sec" name="correo_sec"><br><br>
+
+                <label for="telefono">Telefono:</label>
+                <input type="tel" id="telefono" name="telefono"><br><br>
+
+                <p>Seleccione a continuación su preferencia al look de la pagina en sus modos de contraste:</p>
+                <input type="checkbox" id="preferencia"> Modo Claro<br>
+                <input type="checkbox" id="preferencia_2"> Modo Obscuro<br><br>
+                <p>Si selecciona ambos se entendera que se ven bien para ud de ambas maneras</p>
+
+                <p>Escoga que tanto le gusto la pagina</p>
+                <select id="seleccion_gusto">
+                    <option value="Me gusto mucho">Me gusto mucho</option>
+                    <option value="Esta normalita">Esta normalita</option>
+                    <option value="No me gusto">No me gusto</option>
+                </select><br><br>
+
+                <label for="area_texto">Deje una recomendacion de mejora:</label><br>
+                <textarea id="area_texto" rows="4" cols="50"></textarea><br><br>
+
+                <button type="submit" id="enviar">Enviar</button>
             </fieldset>
         </form>
     </div>
 
-    <p id="Info_redes">Siguenos en las siguientes redes sociales:</p>
+    <hr>
+
+    <div>
+        <h2>Datos Registrados</h2>
+        <table id="tablaDatos">
+            <thead>
+                <tr>
+                    <th>Pais</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Correo</th>
+                    <th>Telefono</th>
+                    <th>Preferencias</th>
+                    <th>Que tanto gusto</th>
+                    <th>Recomendacion</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="cuerpoTabla">
+                <!--aqui se cargan los datos usando el id y con la estructura del script -->
+            </tbody>
+        </table>
+    </div>
+
+    <p id="Info_redes">Síguenos en las siguientes redes sociales:</p>
     <p><a href="https://www.instagram.com/firefox/" target="_blank">
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1024px-Instagram_logo_2022.svg.png" alt="Instagram" width="200"></a></p>
     <p><a href="https://www.facebook.com/Firefox/?locale=es_LA" target="_blank">

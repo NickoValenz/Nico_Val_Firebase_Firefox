@@ -4,6 +4,4 @@ import { getFirestore } from "https://www.gstatic.com/firebasejs/10.4.0/firebase
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const db = getFirestore(app);
-
-export { db };
+export const db = getFirestore(app);
